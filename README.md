@@ -2,7 +2,7 @@
 
 Gerador de senhas aleatórias feito com HTML, CSS e JavaScript. O usuário escolhe o tamanho e se quer números e símbolos, e a senha é gerada na hora.
 
-🔗 **Veja funcionando:** https://isabelleassis74.github.io/gerador-de-senhas
+🔗 **Link com Erro -EM PROCESSO- ** https://isabelleassis74.github.io/gerador-de-senhas
 
 ## Tecnologias
 - HTML
