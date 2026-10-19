@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
+  <title>Gerador de Senhas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="card">
-    <h1>Lista de Tarefas</h1>
+    <h1>Gerador de Senhas</h1>
 
-    <div class="linha">
-      <input type="text" id="nova-tarefa" placeholder="Digite uma tarefa...">
-      <button id="adicionar">Adicionar</button>
-    </div>
+    <label for="tamanho">Tamanho da senha:</label>
+    <input type="number" id="tamanho" value="12" min="4" max="32">
 
-    <ul id="lista"></ul>
-    <p id="contador"></p>
+    <label class="opcao">
+      <input type="checkbox" id="numeros" checked> Incluir números
+    </label>
+    <label class="opcao">
+      <input type="checkbox" id="simbolos" checked> Incluir símbolos
+    </label>
+
+    <button id="gerar">Gerar senha</button>
+
+    <input type="text" id="senha" readonly placeholder="Sua senha aparece aqui">
+    <button id="copiar" class="secundario">Copiar</button>
+    <p id="aviso"></p>
   </div>
 
   <script src="script.js"></script>
